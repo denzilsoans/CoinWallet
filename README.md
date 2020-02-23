@@ -13,7 +13,13 @@ This Application is a Simple Coin Wallet that supports common wallet functions s
 ## Set-Up
 1. Download the entire codebase to your local system.
 2. Open the command line prompt and navigate to the root folder containing the solution file.
-3. Run the command **docker-compose up --build**. This will download the necessary images and run the containers necessary.
-4. Wait for step 3 to complete and the message "Now listening on: http://0.0.0.0:7888" to be displayed.
-5. Now we can run the tests in postman(https://www.getpostman.com/) to verify that the service is working as intended. 
+3. Run the command **docker-compose up --build**. This will download the necessary images and run the containers.
+4. Wait for step 3 to complete, the prompt should display "Now listening on: http://0.0.0.0:7888".
+5. Now run the tests using postman(https://www.getpostman.com/) to verify that the service is working as intended. 
    Use the file **VGW LND-Web-API.postman_collection_7888.json** to import and test the wallet actions.
+   
+## Other Tests
+1. Unit Tests for the project is available in the project "CoinWallet.DomainModel.Tests". 
+   Run command **dotnet test --no-build** to execute the tests
+2. Code Coverage Report can be run using the below command after navigating test project folder
+   **dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov**
