@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  coinwallet.web:
+    image: ${DOCKER_REGISTRY-}coinwalletweb
+    build:
+      context: .
+      dockerfile: CoinWallet/Dockerfile
+    ports:
+      - "7888:7888"
+    depends_on:
+      - sqlserver
+  sqlserver:
+    image: "mcr.microsoft.com/mssql/server:2017-latest-ubuntu"
+    hostname: "sqlserver"
+    container_name: "sqlserver"
+    environment:
+      SA_PASSWORD: "Devs@1234"
+      ACCEPT_EULA: "Y"
+      MSSQL_AGENT_ENABLED: "true"
+    ports:
+      - "1433:1433"
+    expose:
+      - 1433
