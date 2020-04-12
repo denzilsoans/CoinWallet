@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "04603e5b-dca3-4aa4-a450-ed78a8524e82",
-		"name": "VGW LND-Web-API",
+		"name": "CoinWaller-API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
