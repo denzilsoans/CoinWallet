@@ -1,6 +1,6 @@
 # Coin Wallet
 
-This Application is a Simple Coin Wallet that supports common wallet functions such as Credit,Debit and Balance Checks. 
+Simple Coin Wallet API that supports common wallet operations such as Credit,Debit and Balance Checks. 
 
 ## Tools & Technologies
 1. ASP.NET Core 3.1
@@ -16,7 +16,7 @@ This Application is a Simple Coin Wallet that supports common wallet functions s
 3. Run the command **docker-compose up --build**. This will download the necessary images and run the containers.
 4. Wait for step 3 to complete, the prompt should display "Now listening on: http://0.0.0.0:7888".
 5. Now run the tests using postman(https://www.getpostman.com/) to verify that the service is working as intended. 
-   Use the file **VGW LND-Web-API.postman_collection_7888.json** to import and test the wallet actions.
+   Use the file **Postman_Test_7888.json** to import and test the wallet actions.
    
 ## Other Tests
 1. Unit Tests for the project is available in the project "CoinWallet.DomainModel.Tests". 
